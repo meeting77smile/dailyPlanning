@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tittle_booking"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/calendar_2"
+                android:gravity="center|right"
+                android:text="请选择月份："
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:drawableRight="@drawable/arrow_down"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:text="2025-01"/>
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_bill"
+            android:layout_width="match_parent"
+            android:layout_height="471dp"
+            android:background="@drawable/bk_bill">
+
+            <androidx.viewpager.widget.PagerTabStrip
+                android:id="@+id/pts_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.viewpager.widget.ViewPager>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2024-10"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="收入"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/income"/>
+
+                <TextView
+                    android:id="@+id/tv_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="支出"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:drawableLeft="@drawable/cost"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_sum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="100"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
