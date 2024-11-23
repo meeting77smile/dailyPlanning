@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DailyPlanning" parent="Theme.MaterialComponents.DayNight.Bridge">
+       <!-- Theme.Material3.DayNight.NoActionBar-->
+
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/yellow</item>
+       <!-- <item name="colorPrimaryVariant">@color/white</item>-->
+    </style>
+
+    <style name="Theme.DailyPlanning" parent="Base.Theme.DailyPlanning" />
+</resources>
